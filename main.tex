@@ -13,15 +13,15 @@
         \vspace*{1cm}
             
         \Huge
-        \textbf{Título del trabajo}
+        \textbf{Proyecto de Investigación}
             
         \vspace{0.5cm}
         \LARGE
-        Subtítulo
+        Taller Noción de la memoria del computador
             
         \vspace{1.5cm}
             
-        \textbf{Nombres y Apellidos del autor}
+        \textbf{Maria Cristina Vergara Quinchia}
             
         \vfill
             
@@ -37,54 +37,40 @@
 \end{titlepage}
 
 \tableofcontents
-
-\section{Sección introductoria}
+\newpage
+\section{Introducción}\label{intro}
 Esta es la primera sección, podemos agregar algunos elementos adicionales y todo será escrito correctamente. Más aún, si una palabra es demasiado larga y tiene que ser truncada, babel tratará de truncarla correctamente dependiendo del idioma.
 
-\section{Sección de contenido} \label{contenido}
+\section{Contenido} \label{contenido}
+A continuación se desarrollarán los puntos propuestos en el taller 
+\subsection{Defina que es la memoria del computador}
 
-Esta sección es para ver qué pasa con los comandos 
-que definen texto
 
-El paquete también agrega un comportamiento especial 
-a <<estas marcas para hacer citas textuales>> tal como 
-lo indican las reglas de la RAE. \cite{dirac}
+\subsection{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo.}
 
-\begin{lstlisting}
-#include <stdio.h>
-#define N 10
-/* Block
- * comment */
 
-int main()
-{
-    int i;
+\subsection{Describa la manera como se gestiona la memoria en un computador}
 
-    // Line comment.
-    puts("Hello world!");
-    
-    for (i = 0; i < N; i++)
-    {
-        puts("LaTeX is also great for programmers!");
-    }
 
-    return 0;
-}
-\end{lstlisting}
+\subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
+ \subsection{ Citación}
+ 
+Vamos a citar por ejemplo un artículo de \textbf{Albert Einstein} \cite{einstein}.
+También es posible citar libros \cite{dirac} o documentos en línea \cite{knuthwebsite}.
 
-A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
+\section{Imágenes} \label{imagenes}
+
+En la Figura (\ref{fig:memoria}), se puede observar una memoria RAM
 
 \begin{figure}[h]
-\includegraphics[width=4cm]{cpplogo.png}
+\includegraphics[width=4cm]{memoria.png}
 \centering
-\caption{Logo de C++}
-\label{fig:cpplogo}
+\caption{Memoria RAM}
+\label{fig:memoria}
 \end{figure}
 
-En la sección de teoremas (\ref{contenido})
-
-\section{Conclusión} \label{conclulsion}
-
+Las secciones (\ref{intro}), (\ref{contenido}) y (\ref{imagenes}) dependen del estilo del documento.
+\newpage
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 
