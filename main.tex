@@ -39,11 +39,10 @@
 \tableofcontents
 \newpage
 \section{Introducción}\label{intro}
-Si bien la mayoría de personas ya estamos familiarizadas con las palabra "memoria", que se  define cómo la capacidad para recordar o retener información,se puede formular la siguiente pregunta:que relación tendría la palabra memoria con un computador?Algunos tienen una leve noción de que es y para que sirve este componente dentro de un dispositivo electrónico,en este trabajo se va a abordar el papel que juega la memoria dentro de un computador y se profundizará sobre su concepto,su funcionamiento,los tipos de memorias y sus diferencias.
+Si bien la mayoría de personas ya estamos familiarizadas con las palabra "memoria", que se  define cómo la capacidad para recordar o retener información,se puede formular la siguiente pregunta:que relación tendría la palabra memoria con un computador?Algunos tienen una leve noción de que es y para que sirve este componente dentro de un dispositivo electrónico,en este trabajo se va a abordar el papel que juega la memoria dentro de un computador y se hablará sobre su concepto,su funcionamiento,los tipos de memorias y sus diferencias.
+\section{Contenido}\label{contenido}
+A continuación se desarrollarán los puntos propuestos en el taller.
 
-
-\section{Contenido} \label{contenido}
-A continuación se desarrollarán los puntos propuestos en el taller 
 \subsection{Defina que es la memoria del computador}
 Las memorias son los dispositivos de almacenamiento de datos e instrucciones en una computadora.\cite{UNT}
 La memoria del computador es un dispositivo que guarda la información de forma temporal o sea que almacena información durante un periodo de tiempo,esta información puede ser accedida  por el procesador para ejecutar las instrucciones y realizar las tareas de forma rápida y eficiente.
@@ -53,26 +52,35 @@ También se podría definir como un conjunto de celdas de almacenamiento junto c
 Los computadores utilizan varios tipos de memoria con diferentes funciones y características como la velocidad y la capacidad de almacenamiento, las más conocidas son:
 \begin{itemize}
 \item \textbf{Memoria Caché}:
-    La memoria caché consta de tres niveles Nivel 1,Nivel 2 y Nivel 3,actualmente se encuentran localizadas dentro del procesador,esta memoria es mucho más costosa y rápida que la memoria RAM,pueden tener una capacidad hasta de 12 Megabytes.\newline
+    La memoria caché consta de tres niveles Nivel 1,Nivel 2 y Nivel 3,actualmente se encuentran localizadas dentro del procesador,aunque tiene menos capacidad,esta memoria es mucho más costosa y rápida que la memoria RAM.\cite{ref}\newline
     Están diseñadas para reducir el tiempo de acceso a la memoria. En la memoria caché se almacenan los datos que se prevé que se utilizarán más habitualmente, de manera que sea posible reducir el número de accesos que debe hacer el procesador a la memoria principal (ya que el tiempo de acceso a la memoria principal siempre es superior al tiempo de acceso a la memoria caché).\cite{Orenga}
 
-    \item \textbf{Memoria RAM((Ramdom Access Memory): }En español Memoria de Acceso Aleatorio,esta memoria es de lectura/escritura, es volátil o sea que su información se pierde cuando no hay suministro de energía.
+    \item \textbf{Memoria RAM((Ramdom Access Memory): }En español Memoria de Acceso Aleatorio,esta memoria es de lectura/escritura, es volátil o sea que su información se pierde cuando no hay suministro de energía.\newpage
+    La memoria RAM, también llamada memoria principal, por ser la principal conexión con el microprocesador, es físicamente un circuito electrónico compuesto por un grupo de chips que se conectan a la Motherboard por una serie de contactos en su base. Cada uno de los chips que componen la memoria es una unidad que se divide en celdas, siendo posibles de ser accedidas a través de una dirección que las identifica.\cite{ram}
+    \newline
+    Se pueden clasificar en:
+    \begin{itemize}
+        \item\textbf{SRAM(Static Random Access Memory):}En español memoria estática de acceso aleatorio.
+        \item\textbf{DRAM(Dynamic Random Access Memory):}En español memoria dinámica de acceso aleatorio.
+    \end{itemize}
+    
+    En la Figura (\ref{fig:memoria}), se puede observar una memoria RAM
     
     
-    \begin{figure}[h]
+     \begin{figure}[h]
     \includegraphics[width=4cm]{memoria.png}
     \centering
     \caption{Memoria RAM}
     \label{fig:memoria}
     \end{figure}
     
-    En la Figura (\ref{fig:memoria}), se puede observar una memoria RAM
+    
     
     \item \textbf{Memoria ROM(Read Only Memory)}: En español Memoria de sólo lectura,esta memoria lee la información sin poder modificarla o eliminarla,es una memoria no volátil lo que quiere decir que su información permanece aún si no hay fuente de energía.\newline
-    Estas memorias una vez programadas sólo realizan operaciones de lectura. No son volátiles puedenutilizarse para almacenar códigos, generadoras de caracteres, funciones aritméticas complejas, unidades de control microprogramadas, almacenamiento de partes del sistema operativo (BIOS), entre otras.\cite{UNT2}
+    Estas memorias una vez programadas sólo realizan operaciones de lectura. No son volátiles pueden utilizarse para almacenar códigos, generadoras de caracteres, funciones aritméticas complejas, unidades de control microprogramadas, almacenamiento de partes del sistema operativo (BIOS), entre otras.\cite{refUNT}
     
     En la Figura (\ref{fig:rom}), se puede observar una memoria ROM
-     \begin{figure}[h]
+    \begin{figure}[h]
     \includegraphics[width=4cm]{rom.png}
     \centering
     \caption{Memoria ROM}
@@ -84,11 +92,32 @@ Los computadores utilizan varios tipos de memoria con diferentes funciones y car
 
 
 \subsection{Describa la manera como se gestiona la memoria en un computador}
+La memoria es uno de los recursos más importantes de la computadora y, en consecuencia, la parte del sistema operativo responsable de tratar con este recurso, el gestor de memoria, es un componente básico del mismo. El gestor de memoria del sistema operativo debe hacer de puente entre los requisitos de las aplicaciones y los mecanismos que proporciona el hardware de gestión de memoria. Se trata de una de las partes del sistema operativo que está más
+ligada al hardware.
+En el caso de la memoria, el sistema operativo, con el apoyo del hardware de gestión de
+memoria del procesador, debe repartir el almacenamiento existente proporcionando un espacio
+de memoria independiente para cada proceso y evitando la posible interferencia voluntaria o involuntaria de cualquier otro proceso.\cite{gm}\newline
+ En los sistemas operativos modernos la
+gestión de memoria resuelve aspectos como:
+\begin{itemize}
+    \item {La carga de programas y su ubicación. Hay que establecer la correspondencia
+entre las direcciones lógicas del programa y su ubicación física en memoria.}
+\item{ La presencia simultánea de más de un programa en memoria.}
+
+\item{ La compartición de espacios de memoria por varios programas.}
+
+\item{ La ejecución de programas que no caben completos en memoria.}
+\item{ La gestión eficiente del espacio de memoria libre.}\cite{gestion} 
+\end{itemize}
+La parte del sistema operativo que administra la memoria se llama administrador de memoria y su labor consiste en llevar un registro de las partes de memoria que se estén utilizando y aquellas que no, con el fin de asignar espacio en memoria a los procesos cuando éstos la necesiten y liberándola cuando terminen.\cite{gestionm}
+
+
+
+
+
 
 
 \subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
- \subsection{ Citación}
- 
 
 
 
@@ -98,9 +127,14 @@ Los computadores utilizan varios tipos de memoria con diferentes funciones y car
 
 
 
+
+\newpage
+    
 
 
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 
+
 \end{document}
+
