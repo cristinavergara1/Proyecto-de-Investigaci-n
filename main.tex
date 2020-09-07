@@ -52,9 +52,33 @@ También se podría definir como un conjunto de celdas de almacenamiento junto c
 \subsection{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo.}
 Los computadores utilizan varios tipos de memoria con diferentes funciones y características como la velocidad y la capacidad de almacenamiento, las más conocidas son:
 \begin{itemize}
-    \item \textbf{Memoria RAM}
-    \item \textbf{Memoria ROM}
-    \item \textbf{Memoria Caché}
+\item \textbf{Memoria Caché}:
+    La memoria caché consta de tres niveles Nivel 1,Nivel 2 y Nivel 3,actualmente se encuentran localizadas dentro del procesador,esta memoria es mucho más costosa y rápida que la memoria RAM,pueden tener una capacidad hasta de 12 Megabytes.\newline
+    Están diseñadas para reducir el tiempo de acceso a la memoria. En la memoria caché se almacenan los datos que se prevé que se utilizarán más habitualmente, de manera que sea posible reducir el número de accesos que debe hacer el procesador a la memoria principal (ya que el tiempo de acceso a la memoria principal siempre es superior al tiempo de acceso a la memoria caché).\cite{Orenga}
+
+    \item \textbf{Memoria RAM((Ramdom Access Memory): }En español Memoria de Acceso Aleatorio,esta memoria es de lectura/escritura, es volátil o sea que su información se pierde cuando no hay suministro de energía.
+    
+    
+    \begin{figure}[h]
+    \includegraphics[width=4cm]{memoria.png}
+    \centering
+    \caption{Memoria RAM}
+    \label{fig:memoria}
+    \end{figure}
+    
+    En la Figura (\ref{fig:memoria}), se puede observar una memoria RAM
+    
+    \item \textbf{Memoria ROM(Read Only Memory)}: En español Memoria de sólo lectura,esta memoria lee la información sin poder modificarla o eliminarla,es una memoria no volátil lo que quiere decir que su información permanece aún si no hay fuente de energía.\newline
+    Estas memorias una vez programadas sólo realizan operaciones de lectura. No son volátiles puedenutilizarse para almacenar códigos, generadoras de caracteres, funciones aritméticas complejas, unidades de control microprogramadas, almacenamiento de partes del sistema operativo (BIOS), entre otras.\cite{UNT2}
+    
+    En la Figura (\ref{fig:rom}), se puede observar una memoria ROM
+     \begin{figure}[h]
+    \includegraphics[width=4cm]{rom.png}
+    \centering
+    \caption{Memoria ROM}
+    \label{fig:rom}
+    \end{figure}
+    
     
 \end{itemize}
 
@@ -65,21 +89,17 @@ Los computadores utilizan varios tipos de memoria con diferentes funciones y car
 \subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
  \subsection{ Citación}
  
-Vamos a citar por ejemplo un artículo de \textbf{Albert Einstein} \cite{einstein}.
-También es posible citar libros \cite{dirac} o documentos en línea \cite{knuthwebsite}.
 
-\section{Imágenes} \label{imagenes}
 
-En la Figura (\ref{fig:memoria}), se puede observar una memoria RAM
 
-\begin{figure}[h]
-\includegraphics[width=4cm]{memoria.png}
-\centering
-\caption{Memoria RAM}
-\label{fig:memoria}
-\end{figure}
 
-Las secciones (\ref{intro}), (\ref{contenido}) y (\ref{imagenes}) dependen del estilo del documento.
+
+
+
+
+
+
+
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 
