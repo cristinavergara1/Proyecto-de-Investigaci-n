@@ -43,20 +43,21 @@ Si bien la mayoría de personas ya estamos familiarizadas con las palabra  “me
 \section{Contenido}\label{contenido}
 A continuación se desarrollarán los puntos propuestos en el taller.
 
-\subsection{Defina que es la memoria del computador}
-Las memorias son los dispositivos de almacenamiento de datos e instrucciones en una computadora.\cite{UNT}
+\subsection{Defina que es la memoria del computador.}
+ “Las memorias son los dispositivos de almacenamiento de datos e instrucciones en una computadora”\cite{UNT}.
 La memoria del computador es un dispositivo que guarda la información de forma temporal o sea que almacena información durante un periodo de tiempo,esta información puede ser accedida  por el procesador para ejecutar las instrucciones y realizar las tareas de forma rápida y eficiente.
-También se podría definir como un conjunto de celdas de almacenamiento junto con los circuitos asociados que se necesitan para ingresar y sacar la información de almacenamiento.\cite{FIng}
+También se podría definir como “un conjunto de celdas de almacenamiento junto con los circuitos asociados que se necesitan para ingresar y sacar la información de almacenamiento”\cite{FIng}.
 
 \subsection{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo.}
 Los computadores utilizan varios tipos de memoria con diferentes funciones y características como la velocidad y la capacidad de almacenamiento, las más conocidas son:
 \begin{itemize}
 \item \textbf{Memoria Caché}:
-    La memoria caché consta de tres niveles Nivel 1,Nivel 2 y Nivel 3,actualmente se encuentran localizadas dentro del procesador,aunque tiene menos capacidad,esta memoria es mucho más costosa y rápida que la memoria RAM.\cite{ref}\newline
-    Están diseñadas para reducir el tiempo de acceso a la memoria. En la memoria caché se almacenan los datos que se prevé que se utilizarán más habitualmente, de manera que sea posible reducir el número de accesos que debe hacer el procesador a la memoria principal (ya que el tiempo de acceso a la memoria principal siempre es superior al tiempo de acceso a la memoria caché).\cite{Orenga}
+    En la memoria caché se almacena una copia de la memoria RAM,dicha copia contiene la información que  emplea el procesador frecuentemente para ejecutar las ordenes, lo cuál reduce el tiempo en el que se obtiene y se transfiere la información ya que el procesador no tiene que ir a buscarla se puede decir que la obtiene de forma casi inmediata.Esto de debe a que la memoria caché se encuentra localizada dentro del procesador y
+    consta de tres niveles Nivel 1,Nivel 2 y Nivel 3.A medida que se asciende en el nivel de la memoria caché la capacidad aumenta y la velocidad disminuye en cada nivel.La capacidad de esta memoria  es de 12 Megabytes aproximadamente y aunque tiene menos capacidad que la memoria RAM es mucho más costosa y rápida\cite{ref}.\newline
+    Están diseñadas para reducir el tiempo de acceso a la memoria. En la memoria caché se almacenan los datos que se prevé que se utilizarán más habitualmente, de manera que sea posible reducir el número de accesos que debe hacer el procesador a la memoria principal (ya que el tiempo de acceso a la memoria principal siempre es superior al tiempo de acceso a la memoria caché)\cite{Orenga}.
 
-    \item \textbf{Memoria RAM(Ramdom Access Memory): }En español Memoria de Acceso Aleatorio,esta memoria es de lectura/escritura, es volátil o sea que su información se pierde cuando no hay suministro de energía.\newpage
-    La memoria RAM, también llamada memoria principal, por ser la principal conexión con el microprocesador, es físicamente un circuito electrónico compuesto por un grupo de chips que se conectan a la Motherboard por una serie de contactos en su base. Cada uno de los chips que componen la memoria es una unidad que se divide en celdas, siendo posibles de ser accedidas a través de una dirección que las identifica.\cite{ram}
+    \item \textbf{Memoria RAM(Ramdom Access Memory): }En español Memoria de Acceso Aleatorio,esta memoria es de lectura/escritura, es volátil o sea que su información se pierde cuando no hay suministro de energía.
+    La memoria RAM, también llamada memoria principal, por ser la principal conexión con el microprocesador, es físicamente un circuito electrónico compuesto por un grupo de chips que se conectan a la Motherboard por una serie de contactos en su base. Cada uno de los chips que componen la memoria es una unidad que se divide en celdas, siendo posibles de ser accedidas a través de una dirección que las identifica\cite{ram}.
     \newline
     Se puede clasificar en:
     \begin{itemize}
@@ -64,7 +65,7 @@ Los computadores utilizan varios tipos de memoria con diferentes funciones y car
         \item\textbf{DRAM(Dynamic Random Access Memory):}En español memoria dinámica de acceso aleatorio.
     \end{itemize}
     
-    En la Figura (\ref{fig:memoria}), se puede observar una memoria RAM
+    En la Figura (\ref{fig:memoria}), se puede observar una memoria RAM.
     
     
      \begin{figure}[h]
@@ -77,7 +78,7 @@ Los computadores utilizan varios tipos de memoria con diferentes funciones y car
     
     
     \item \textbf{Memoria ROM(Read Only Memory)}: En español Memoria de sólo lectura,esta memoria lee la información sin poder modificarla o eliminarla,es una memoria no volátil lo que quiere decir que su información permanece aún si no hay fuente de energía.\newline
-    Estas memorias una vez programadas sólo realizan operaciones de lectura. No son volátiles pueden utilizarse para almacenar códigos, generadoras de caracteres, funciones aritméticas complejas, unidades de control microprogramadas, almacenamiento de partes del sistema operativo (BIOS), entre otras.\cite{refUNT}
+    Estas memorias una vez programadas sólo realizan operaciones de lectura. No son volátiles pueden utilizarse para almacenar códigos, generadoras de caracteres, funciones aritméticas complejas, unidades de control microprogramadas, almacenamiento de partes del sistema operativo (BIOS), entre otras\cite{refUNT}.\newpage
     
     En la Figura (\ref{fig:rom}), se puede observar una memoria ROM
     \begin{figure}[h]
@@ -91,12 +92,12 @@ Los computadores utilizan varios tipos de memoria con diferentes funciones y car
 \end{itemize}
 
 
-\subsection{Describa la manera como se gestiona la memoria en un computador}
+\subsection{Describa la manera como se gestiona la memoria en un computador.}
 La memoria es uno de los recursos más importantes de la computadora y, en consecuencia, la parte del sistema operativo responsable de tratar con este recurso, el gestor de memoria, es un componente básico del mismo. El gestor de memoria del sistema operativo debe hacer de puente entre los requisitos de las aplicaciones y los mecanismos que proporciona el hardware de gestión de memoria. Se trata de una de las partes del sistema operativo que está más
 ligada al hardware.
 En el caso de la memoria, el sistema operativo, con el apoyo del hardware de gestión de
 memoria del procesador, debe repartir el almacenamiento existente proporcionando un espacio
-de memoria independiente para cada proceso y evitando la posible interferencia voluntaria o involuntaria de cualquier otro proceso.\cite{gm}\newline
+de memoria independiente para cada proceso y evitando la posible interferencia voluntaria o involuntaria de cualquier otro proceso\cite{gm}.\newline
  En los sistemas operativos modernos la
 gestión de memoria resuelve aspectos como:
 \begin{itemize}
@@ -107,9 +108,9 @@ entre las direcciones lógicas del programa y su ubicación física en memoria.}
 \item{ La compartición de espacios de memoria por varios programas.}
 
 \item{ La ejecución de programas que no caben completos en memoria.}
-\item{ La gestión eficiente del espacio de memoria libre.}\cite{gestion} 
+\item{ La gestión eficiente del espacio de memoria libre}\cite{gestion}.
 \end{itemize}
-La parte del sistema operativo que administra la memoria se llama administrador de memoria y su labor consiste en llevar un registro de las partes de memoria que se estén utilizando y aquellas que no, con el fin de asignar espacio en memoria a los procesos cuando éstos la necesiten y liberándola cuando terminen.\cite{gestionm}
+La parte del sistema operativo que administra la memoria se llama administrador de memoria y su labor consiste en llevar un registro de las partes de memoria que se estén utilizando y aquellas que no, con el fin de asignar espacio en memoria a los procesos cuando éstos la necesiten y liberándola cuando terminen\cite{gestionm}.
 
 
 
@@ -120,7 +121,7 @@ La parte del sistema operativo que administra la memoria se llama administrador 
 \subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
 
 Lo que hace una que una memoria sea más rápida que otra es la disminución de la latencia(retardo o intervalo de tiempo en el que se  accede a la información de la memoria),entre menos sea la latencia mayor es la velocidad,por ejemplo en las memorias que están dentro del procesador(caché) la latencia es mínima,por el contrario las memorias externas al  procesador como la memoria RAM,  la latencia suele a aumentar debido a que  la información se tiene que transmitir de un componente a otro. 
-Es importante  porque entre más reducida sea la latencia,la memoria será más rápida y eficiente en la lectura,escritura y transferencia de datos lo que aportaría al buen rendimiento del sistema. 
+Es importante  porque entre más reducida sea la latencia,la memoria será más rápida y eficiente en la lectura,escritura y transferencia de datos lo que aportaría al buen rendimiento del sistema.\newpage
 
 
 
@@ -128,7 +129,7 @@ Es importante  porque entre más reducida sea la latencia,la memoria será más 
 \section{Conclusiones}
 \begin{itemize}
     \item{Las memorias  rápidas como la memoria caché,tienen altos costos y menor capacidad de almacenamiento mientras que las memorias lentas son asequibles y tienen mayor capacidad de almacenamiento. }
-    \item{El procesador no trabaja con el disco duro,trabaja con la memoria RAM ya que con esta  accede a la información con mayor rapidez.}
+    \item{El procesador no prefiere trabajar con el disco duro,prefiere trabajar con la memoria RAM ya que con esta  accede a la información con mayor rapidez.}
     \item{En la memoria se operan grandes cantidades de información debido a que el procesador no posee suficiente espacio de almacenamiento para hacerlo. }
 \end{itemize}
 
